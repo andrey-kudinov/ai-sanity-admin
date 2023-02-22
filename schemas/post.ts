@@ -34,6 +34,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'showImageInCard',
+      title: 'Show image in card',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',
@@ -43,6 +48,16 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'readTime',
+      title: 'Read Time',
+      type: 'string',
     }),
     defineField({
       name: 'body',
