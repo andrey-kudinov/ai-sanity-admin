@@ -52,7 +52,8 @@ export default defineType({
     defineField({
       name: 'description',
       title: 'Description',
-      type: 'blockContent',
+      type: 'string',
+      validation: Rule => Rule.required().max(280).error('Shorter description are usually better. Limit is 280'),
     }),
     defineField({
       name: 'readTime',
