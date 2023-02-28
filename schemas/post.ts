@@ -53,7 +53,7 @@ export default defineType({
       name: 'description',
       title: 'Description',
       type: 'string',
-      validation: Rule => Rule.required().max(280).error('Shorter description are usually better. Limit are 280'),
+      validation: Rule => Rule.required().max(280).error('Shorter description is usually better. Limit is 280'),
     }),
     defineField({
       name: 'readTime',
