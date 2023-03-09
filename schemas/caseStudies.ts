@@ -10,7 +10,6 @@ export default defineType({
       title: 'Title',
       type: 'string',
     }),
-    
     defineField({
       name: 'slug',
       title: 'Slug',
@@ -20,7 +19,6 @@ export default defineType({
         maxLength: 96,
       },
     }),
-
     defineField({
       name: 'tags',
       title: 'Tags',
@@ -33,28 +31,24 @@ export default defineType({
         },
       ],
     }),
-
     defineField({
       name: 'text',
       title: 'Text',
       type: 'array',
       of: [{ type: 'block' }],
     }),
-
     defineField({
       name: 'client',
       title: 'Client',
       type: 'reference',
-      to: {type: 'client'},
+      to: { type: 'client' },
     }),
-
     defineField({
       name: 'sector',
       title: 'Sector',
       type: 'reference',
-      to: {type: 'sector'},
+      to: { type: 'sector' },
     }),
-
     defineField({
       name: 'scope',
       title: 'Scope',
@@ -62,11 +56,10 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: {type: 'scope'},
+          to: { type: 'scope' },
         },
       ],
     }),
-
     defineField({
       name: 'logo',
       title: 'Logo',
@@ -74,12 +67,11 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: {type: 'techStack'},
+          to: { type: 'techStack' },
         },
       ],
     }),
   ],
-
   preview: {
     select: {
       title: 'title',
