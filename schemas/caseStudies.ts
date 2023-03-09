@@ -27,9 +27,8 @@ export default defineType({
       type: 'array',
       of: [
         {
-          name: 'tag',
-          title: 'Tag',
-          type: 'string',
+          type: 'reference',
+          to: {type: 'tags'},
         },
       ],
     }),
