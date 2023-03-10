@@ -26,7 +26,7 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: {type: 'tags'},
+          to: { type: 'tags' },
         },
       ],
     }),
